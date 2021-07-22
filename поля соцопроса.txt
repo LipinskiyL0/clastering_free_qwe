@@ -1,0 +1,6 @@
+df.columns
+Index(['student_id', 'syllabus', 'study_group', 'topic_poll_id',
+       'topic_poll_title', 'topic_poll_is_required', 'topic_poll_was_skipped',
+       'created_at', 'finished_at', 'question', 'question_type',
+       'question_answers', 'student_answers', 'student_comments'],
+      dtype='object')
