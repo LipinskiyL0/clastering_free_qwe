@@ -60,7 +60,7 @@ try:
             ON tab7."id"=tab6."topic_poll_question_id" AND tab5."id"=tab7."topic_poll_id"
         
         
-        WHERE (tab7."type" = 'free') AND (tab4."created_at" BETWEEN '{0}' AND '{1}')
+        WHERE (tab7."type" = 'free') AND (tab4."created_at" BETWEEN '{0}' AND '{1}') AND (tab1."caption"='Реализация проектов цифровой трансформации (2021)')
         --LIMIT 10000
            '''.format('2021-03-01', '2021-08-01'),
         conn)

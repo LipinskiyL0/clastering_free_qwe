@@ -87,7 +87,7 @@ class clastering_free_qwe:
                       'vect__max_df': [0.85, 0.9, 0.95],
                       'vect__method':['tfidf', 'bw'],
                        
-                      'c1__n_clusters': [ 5, 6, 8,  10, 12, 15]
+                      'c1__n_clusters': [ 5, 6, 8,  10, 11, 13,15]
                        }
         grid = GridSearchCV(pipe, param_grid, return_train_score=True, cv=my_cv_spliter )
         
@@ -239,10 +239,10 @@ class clastering_free_qwe:
     
 if __name__=='__main__':
     etl_cl=clastering_free_qwe()
-    etl_cl.load_data(question_id=5721)
+    etl_cl.load_data(question_id=5108)
     etl_cl.transform()
     print(etl_cl.score)
-    etl_cl.save_data(add=False)
+    etl_cl.save_data(add=True)
     
     
 
